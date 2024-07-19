@@ -13,10 +13,44 @@ androidx-test-junit = "1.2.0"
 compose-plugin = "1.6.11"
 junit = "4.13.2"
 kotlin = "2.0.0"
-ktor = "2.3.12"
 logback = "1.5.6"
+kmmViewModel = "1.0.0-ALPHA-20-kotlin-2.0.0-RC1"
+multiplatformSettingsNoArg = "1.1.1"
+kotlinx-coroutines = "1.8.0"
+ktor = "3.0.0-wasm2"
+koinAndroid = "3.6.0-alpha3"
+coil = "2.6.0"
+koin = "3.6.0-wasm-alpha2"
+koinCompose = "1.2.0-alpha3"
+ktorServerStatusPages = "2.1.0"
+coilCompose = "3.0.0-alpha06"
+ksp = "1.9.22-1.0.17"
+kotlinSerialization = "1.9.21"
+kmpNativeCoroutines = "1.0.0-ALPHA-28-kotlin-2.0.0-RC1"
+compose = "1.6.2"
+foundationAndroid = "1.6.8"
+mockito-mockitoCore = "3.12.4"
+mockitoCore = "5.12.0"
+mockitoInline = "3.12.4"
+mockitoKotlin = "5.3.1"
+mockkCommon = "1.12.0"
+kotlinxSerializationJson = "1.6.2"
+jacksonModuleKotlin = "2.15.3"
+postgresql = "42.7.3"
+simplekotlinmailCore = "1.4.0"
+jetbrains-kotlinxDatetime = "0.6.0"
 
 [libraries]
+kotlinx-datetime-v060 = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "jetbrains-kotlinxDatetime" }
+postgresql = { module = "org.postgresql:postgresql", version.ref = "postgresql" }
+simplekotlinmail-client = { module = "net.axay:simplekotlinmail-client", version.ref = "simplekotlinmailCore" }
+simplekotlinmail-core = { module = "net.axay:simplekotlinmail-core", version.ref = "simplekotlinmailCore" }
+jackson-module-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jacksonModuleKotlin" }
+coil-core = { module = "io.coil-kt.coil3:coil-core", version.ref = "coilCompose" }
+coil = { module = "io.coil-kt:coil", version.ref = "coil" }
+coil-android = { module = "io.coil-kt.coil3:coil-android", version.ref = "coilCompose" }
+coil-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coilCompose" }
+coil-network-ktor = { module = "io.coil-kt.coil3:coil-network-ktor", version.ref = "coilCompose" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -31,6 +65,37 @@ logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
 ktor-server-core = { module = "io.ktor:ktor-server-core-jvm", version.ref = "ktor" }
 ktor-server-netty = { module = "io.ktor:ktor-server-netty-jvm", version.ref = "ktor" }
 ktor-server-tests = { module = "io.ktor:ktor-server-tests-jvm", version.ref = "ktor" }
+ktor-server-content-negotiation = { module = "io.ktor:ktor-server-content-negotiation", version.ref = "ktor" }
+ktor-client-json = { group = "io.ktor", name = "ktor-client-json", version.ref = "ktor" }
+ktor-client-logging = { group = "io.ktor", name = "ktor-client-logging", version.ref = "ktor" }
+ktor-client-serialization = { group = "io.ktor", name = "ktor-client-serialization", version.ref = "ktor" }
+ktor-client-content-negotiation = { group = "io.ktor", name = "ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization-gson = { module = "io.ktor:ktor-serialization-gson", version.ref = "ktorServerStatusPages" }
+ktor-serialization-kotlinx-json = { group = "io.ktor", name = "ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor" }
+kmmViewModel = { group = "com.rickclephas.kmm", name = "kmm-viewmodel-core", version.ref = "kmmViewModel" }
+multiplatform-settings-no-arg = { module = "com.russhwolf:multiplatform-settings-no-arg", version.ref = "multiplatformSettingsNoArg" }
+kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinAndroid" }
+koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koinCompose" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+ktor-client-core = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+ktor-client-android = { group = "io.ktor", name = "ktor-client-android", version.ref = "ktor" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+androidx-foundation-android = { group = "androidx.compose.foundation", name = "foundation-android", version.ref = "foundationAndroid" }
+ktor-server-cors = { module = "io.ktor:ktor-server-cors", version.ref = "ktor" }
+ktor-server-status-pages = { module = "io.ktor:ktor-server-status-pages", version.ref = "ktorServerStatusPages" }
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockitoCore" }
+mockito-core-v3124 = { module = "org.mockito:mockito-core", version.ref = "mockito-mockitoCore" }
+mockito-inline = { module = "org.mockito:mockito-inline", version.ref = "mockitoInline" }
+mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version.ref = "mockitoKotlin" }
+mockk-common = { module = "io.mockk:mockk-common", version.ref = "mockkCommon" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+
+
+
+[bundles]
+ktor-common = ["ktor-client-core", "ktor-client-json", "ktor-client-logging", "ktor-client-serialization", "ktor-client-content-negotiation", "ktor-serialization-kotlinx-json"]
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
@@ -40,3 +105,6 @@ compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "
 kotlinJvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlinSerialization" }
+kmpNativeCoroutines = { id = "com.rickclephas.kmp.nativecoroutines", version.ref = "kmpNativeCoroutines" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

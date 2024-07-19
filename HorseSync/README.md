@@ -17,3 +17,5 @@ This is a Kotlin Multiplatform project targeting Android, iOS, Server.
 
 
 Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+
+Create all of the base screens for the KMP app that im creating for android only, currently. I am using the Kotlin Multiplatform NavHost library for the navigation between screens. For the dependency injection i am using koin. The app is for a horse riding school, where the users (riders) will create their accounts and have their available lessons, and will be able to schedule their monthly lessons and have the calendar for their lessons. They will also be able to check if they have already paid the lessons they have done. There will be an admin mode where the teachers will be able to check who paid and get their next lesson and the monthly calendar with all of the lessons scheduled. They will be the ones with the power to accept the students shceduling requests.
